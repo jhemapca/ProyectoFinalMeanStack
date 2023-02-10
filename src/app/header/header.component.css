@@ -1,19 +1,17 @@
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+.spacer {
+  justify-content: space-evenly;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header nav a {
-  color: #fff;
+a{
   text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Lucida Console", monospace;
+  font-size: 2vw;
+}
+
+a:active, a:hover{
+  color: accent;
+  background-color: rgb(52, 3, 98);
+  padding: 15px 25px;
 }
