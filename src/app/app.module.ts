@@ -45,7 +45,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatGridListModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   exports: [MatButtonModule, MatCheckboxModule],
   providers: [SearchService],
