@@ -31,16 +31,16 @@ export class SearchComponent implements OnDestroy {
         this.criteriaSelected = {animals: [],criteria: this.criteria};
         break;
       case 1:
-        this.criteria='frog';
-        this.SearchService.getFrogs;
+        this.criteria='Sapos';
+        this.SearchService.getFrogs();
         break;
       case 2:
-        this.criteria='fox';
-        this.SearchService.getFoxs;
+        this.criteria='Zorros';
+        this.SearchService.getFoxs();
         break;
       case 3:
-        this.criteria='dragon';
-        this.SearchService.getDragons;
+        this.criteria='Dragones';
+        this.SearchService.getDragons();
         break;
       default:
         break;

@@ -1,10 +1,12 @@
 export interface Search{
-  familia: string;
-  nombre: string;
-  clase: string;
-  habitat:string[];
+//  familia: string;
+  name: string;
+/*  clase: string;
+
   dieta:string;
   vidaProm:string;
+  */
   peso:string;
   altura:string;
+  habitat:string;
 }
