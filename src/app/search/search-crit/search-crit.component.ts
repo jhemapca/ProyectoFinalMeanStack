@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,EventEmitter,Output } from '@angular/core';
 
 @Component({
   selector: 'app-search-crit',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SearchCritComponent {
 
+  @Output() criteriaSelected = new EventEmitter();
+
+  onCriteriaSelect(criteria: number) {
+    this.criteriaSelected.emit(criteria);
+  }
 }

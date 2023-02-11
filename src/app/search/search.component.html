@@ -1,1 +1,5 @@
-<p>search works!</p>
+<div class="wrapper">
+  <div class="texto"><h1>Busqueda por Criterios</h1></div>
+</div>
+<app-search-crit style="margin-bottom: -15rem !important;" (criteriaSelected)="onCriteriaSelectedFromChild($event)"></app-search-crit>
+<app-search-res [criteriaListenedFromExternalComponent]="criteriaSelected" [loading]="loading"></app-search-res>

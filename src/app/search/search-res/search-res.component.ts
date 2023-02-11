@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Search } from '../search.model';
+
+interface SeaRes{
+  animals:Search[];
+  criteria:string;
+}
 
 @Component({
   selector: 'app-search-res',
@@ -6,5 +12,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-res.component.css']
 })
 export class SearchResComponent {
-
+  @Input() criteriaListenedFromExternalComponent: SeaRes = {animals: [],criteria: ''};
+  @Input() loading: boolean = false;
 }
