@@ -6,7 +6,7 @@ mat-grid-list {
 
 .texto {
   background-color: rgba(91, 126, 224, 0.95);  /*Para dar color a fondo*/
-  width: 50rem;  /*Para determinar espacio usado de ancho*/
+  width: 30rem;  /*Para determinar espacio usado de ancho*/
   padding: 2.5rem;
   border-radius: 0rem;
 }
