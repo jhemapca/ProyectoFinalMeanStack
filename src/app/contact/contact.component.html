@@ -19,4 +19,37 @@
       </div>
     </div>
   </form>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script>
+    function submitForm() {
+      // Validación del nombre
+      let name = document.getElementById("name").value;
+      if (name === "") {
+        alert("Por favor, ingrese su nombre.");
+        return;
+      }
+      // Mostrar los datos en el modal
+      let modalText = document.getElementById("modalText");
+      modalText.innerHTML = "Nombre: " + name;
+      let modal = document.getElementById("myModal");
+      modal.style.display = "block";
+      // Limpiar el formulario
+      document.getElementById("name").value = "";
+    }
+    // Cerrar el modal al hacer clic en la X
+    let close = document.getElementsByClassName("close")[0];
+    close.onclick = function() {
+      let modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+  </script>
 </html>
