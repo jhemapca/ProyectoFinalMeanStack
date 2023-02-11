@@ -5,8 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'}, //redirige a home cuando no hay informacion luego del slash
-  {path:'home', component: HomeComponent},  // si yo entro a /home rediregeme al compomente home
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path:'home', component: HomeComponent},
   {path:'search', component: SearchComponent},
   {path:'contact',component:ContactComponent}
 ];

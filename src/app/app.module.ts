@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { FormsModule } from '@angular/forms'; // Para usar forms
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -15,6 +17,9 @@ import { SearchComponent } from './search/search.component';
 import { SearchCritComponent } from './search/search-crit/search-crit.component';
 import { SearchResComponent } from './search/search-res/search-res.component';
 import { ContactComponent } from './contact/contact.component';
+import {MatGridListModule} from '@angular/material/grid-list'; // Para grillas
+import {MatCardModule } from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -35,6 +40,10 @@ import { ContactComponent } from './contact/contact.component';
     MatCheckboxModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    MatCardModule,
+    MatGridListModule,
+    MatInputModule,
+
   ],
   exports: [MatButtonModule, MatCheckboxModule],
   providers: [],
