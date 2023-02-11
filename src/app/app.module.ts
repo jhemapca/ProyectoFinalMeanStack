@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 
@@ -12,6 +14,9 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { SearchCritComponent } from './search/search-crit/search-crit.component';
 import { SearchResComponent } from './search/search-res/search-res.component';
+import { ContactComponent } from './contact/contact.component';
+
+
 
 @NgModule({
   declarations: [
@@ -20,11 +25,16 @@ import { SearchResComponent } from './search/search-res/search-res.component';
     HomeComponent,
     SearchComponent,
     SearchCritComponent,
-    SearchResComponent
+    SearchResComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    MatToolbarModule,MatButtonModule, MatCheckboxModule, BrowserAnimationsModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
   ],
   exports: [MatButtonModule, MatCheckboxModule],
   providers: [],
