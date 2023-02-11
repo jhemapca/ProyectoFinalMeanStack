@@ -22,6 +22,8 @@ import {MatCardModule } from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
 
 
 
@@ -33,7 +35,9 @@ import { HttpClientModule } from '@angular/common/http';
     SearchComponent,
     SearchCritComponent,
     SearchResComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
